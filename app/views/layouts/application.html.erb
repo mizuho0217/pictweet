@@ -28,7 +28,7 @@
         <% if user_signed_in? %>
         <div class="user_nav grid-6">
           <span><%= current_user.nickname %>
-            <ul class="userr__info">
+            <ul class="user__info">
               <li>
                 <a href="/users/<%= current_user.id %>">マイページ</a>
                 <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
